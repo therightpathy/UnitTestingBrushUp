@@ -11,14 +11,12 @@ namespace UnitTestingBrushUp
         Male,
         Female
     }
-
     public class Student
     {
         private string _name;
         private string _address;
         private int _semester;
         private Gender _gender;
-
         public string Name
         {
             get => _name;
@@ -28,7 +26,6 @@ namespace UnitTestingBrushUp
                 _name = value;
             }
         }
-
         public string Address
         {
             get => _address;
@@ -47,39 +44,39 @@ namespace UnitTestingBrushUp
                 _semester = value;
             }
         }
-        public Gender Gender { get => _gender; set => _gender = value; }
-
+        public Gender Gender
+        {
+            get => _gender;
+            set => _gender = value;
+        }
         public Student(string name, string address, int semester, Gender gender)
         {
-            CheckName(Name);
-            CheckAddress(Address);
-            CheckSemester(Semester);
+            CheckName(name);
+            CheckAddress(address);
+            CheckSemester(semester);
             Name = name;
             Address = address;
             Semester = semester;
             Gender = gender;
         }
-
         private static bool CheckName(string name)
         {
             if (name.Length < 2)
             {
-                throw new ArgumentException("Name must be more than two characters");
+                throw new ArgumentException("Name is shorter than two characters");
             }
             return true;
         }
-
         private static void CheckAddress(string address)
         {
-            if(string.IsNullOrWhiteSpace(address))
+            if (string.IsNullOrWhiteSpace(address))
             {
-                throw new ArgumentException("Address must be filled");
+                throw new ArgumentException("Address is null or empty");
             }
         }
-
-        private static void CheckSemester(int semester)
+        public static void CheckSemester(int semester)
         {
-            if(semester < 1)
+            if (semester < 1)
             {
                 throw new ArgumentException("Semester must be between 1-8");
             }
@@ -88,7 +85,6 @@ namespace UnitTestingBrushUp
                 throw new ArgumentException("Semester must be between 1-8");
             }
         }
-
         public override string ToString()
         {
             return string.Format("Student({0}, {1}, {2})", Name, Address, Semester);
