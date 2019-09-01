@@ -28,13 +28,14 @@ namespace UnitTestingBrushUp
                 _name = value;
             }
         }
+
         public string Address
         {
             get => _address;
             set
             {
                 CheckAddress(value);
-                _name = value;
+                _address = value;
             }
         }
         public int Semester
@@ -56,6 +57,7 @@ namespace UnitTestingBrushUp
             Name = name;
             Address = address;
             Semester = semester;
+            Gender = gender;
         }
 
         private static bool CheckName(string name)

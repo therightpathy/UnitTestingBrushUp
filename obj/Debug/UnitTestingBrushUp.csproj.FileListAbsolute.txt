@@ -1,0 +1,6 @@
+C:\Users\p_raz\source\repos\UnitTestingBrushUp\UnitTestingBrushUp\bin\Debug\UnitTestingBrushUp.dll
+C:\Users\p_raz\source\repos\UnitTestingBrushUp\UnitTestingBrushUp\bin\Debug\UnitTestingBrushUp.pdb
+C:\Users\p_raz\source\repos\UnitTestingBrushUp\UnitTestingBrushUp\obj\Debug\UnitTestingBrushUp.csprojAssemblyReference.cache
+C:\Users\p_raz\source\repos\UnitTestingBrushUp\UnitTestingBrushUp\obj\Debug\UnitTestingBrushUp.csproj.CoreCompileInputs.cache
+C:\Users\p_raz\source\repos\UnitTestingBrushUp\UnitTestingBrushUp\obj\Debug\UnitTestingBrushUp.dll
+C:\Users\p_raz\source\repos\UnitTestingBrushUp\UnitTestingBrushUp\obj\Debug\UnitTestingBrushUp.pdb
