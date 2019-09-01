@@ -24,7 +24,7 @@ namespace UnitTestingBrushUp
             get => _name;
             set
             {
-                CheckName(value;)
+                CheckName(value);
                 _name = value;
             }
         }
@@ -33,15 +33,16 @@ namespace UnitTestingBrushUp
             get => _address;
             set
             {
-                CheckAddress(value;)
+                CheckAddress(value);
                 _name = value;
             }
+        }
         public int Semester
         {
             get => _semester;
             set
             {
-                CheckSemester(value;)
+                CheckSemester(value);
                 _semester = value;
             }
         }
